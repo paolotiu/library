@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script type="text/javascript" src="script.js" async></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="styles.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title"> <h1>Library</h1> </div>
+        <table class="table">
+            <thead>
+              <tr class="table-secondary">
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Pages</th>
+                <th scope="col">Read?</th>
+              </tr>
+            </thead>
+            <tbody class="tablebody">
+            </tbody>
+        </table>
+        <button type="button" onclick="showForm() " class="btn btn-light add">Add Book</button>
+        
+        <form class="form" action="#" style="display: none;">
+            <div class="form-group">
+                <label for="title"> Title</label>
+                <input type="text" id='title' name="title" class="form-control"required>
+            </div>
+            <div class="form-group">
+                <label for="author"> Author </label>
+                <input type="text" id='author' name="author" class="form-control" required>
+            </div>    
+            <div class="form-group"> 
+                <label for="pages"> Pages</label>
+                <input type="number" id="pages" name="pages" min="1" class="form-control" required> 
+            </div>      
+            <div class="form-group">   
+                <input type="radio" id="read" name="read" value="read"  required>
+                <label for="read"> Read</label>
+                <input type="radio" name="read" id="notRead" value="notRead" required>
+                <label for="notRead"> Not Read</label>
+            </div>    
+                <button id='submit'type="button" class="btn btn-primary" onclick="addBookToLibrary()">Submit</button>
+        </form>
+    </body>
+</html>

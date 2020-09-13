@@ -1,0 +1,55 @@
+
+div{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    
+}
+
+input[type = text], input[type=number], input[type=submit] {
+    width: 100px;
+}
+
+/* #submit{
+    width: 50px;
+}
+
+.form{
+    display: none;
+    text-align: left;
+} */
+
+/* input[type = text], input[type=number]{
+    display: block;
+    margin: auto;
+} */
+
+.form{
+    position: relative;
+    top: 30px;
+    height: auto;
+    width:150px; 
+    text-align: left;
+    margin-left: 10px;
+}
+
+.form-group{
+    text-align: left;
+}
+
+.table{
+    text-align: center;
+}
+
+td:first-child + td + td + td + td{
+    border-top: none;
+    width: 15vw;
+}
+
+.add{
+    margin-left: 10px;
+}
